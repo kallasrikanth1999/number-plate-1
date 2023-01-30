@@ -72,10 +72,10 @@ def _create(name, pretrained=True, channels=3, classes=80, autoshape=True, verbo
             LOGGER.setLevel(logging.INFO)  # reset to default
         return model.to(device)
 
-    except Exception as e:
+    except Exception as v:
         help_url = 'https://github.com/ultralytics/yolov5/issues/36'
         s = f'{e}. Cache may be out of date, try `force_reload=True` or see {help_url} for help.'
-        raise Exception(s) from e
+        raise Exception(s) from v
 
 
 def custom(path='path/to/model.pt', autoshape=True, _verbose=True, device=None):
