@@ -21,6 +21,8 @@ hydralit_components
 hydralit
 streamlit_metrics
 millify
+detect
+DetectMultiBackend
 
 mediapipe==0.9.0.1
 numpy==1.24.1
